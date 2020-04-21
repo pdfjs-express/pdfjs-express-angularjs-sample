@@ -1,8 +1,6 @@
-# WebViewer - AngularJS sample
+# PDF.js Express - AngularJS sample
 
-[WebViewer](https://www.pdftron.com/webviewer) is a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
-
-![WebViewer UI](https://www.pdftron.com/downloads/pl/webviewer-ui.png)
+[PDF.js Express](https://pdfjs.express/) is a powerful JavaScript-based PDF Library that leverages PDF.js and adds additional features such as annotations, form support, and digitial signatures. It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
 This repo is specifically designed for any users interested in integrating WebViewer into AngularJS project. See [AngularJS.org](https://angularjs.org) for more information.
 
@@ -13,8 +11,8 @@ Before you begin, make sure your development environment includes [Node.js](http
 ## Install
 
 ```
-git clone https://github.com/PDFTron/webviewer-angularjs-sample.git
-cd webviewer-angularjs-sample
+git clone https://github.com/pdfjs-express/pdfjs-express-angularjs-sample.git
+cd pdfjs-express-angularjs-sample
 npm install
 ```
 
@@ -28,21 +26,8 @@ Navigate to `http://localhost:3000/`. The app will automatically reload if you c
 
 ## WebViewer APIs
 
-See [API documentation](https://www.pdftron.com/documentation/web/guides/ui/apis).
+See [API documentation](https://pdfjs.express/documentation).
 
-## Enabling full API
-
-PDFNetJS Full is a complete browser side PDF SDK, unlocking viewing, parsing and editing of PDF files. To enable full API, you can modify constructor in components.js:
-
-```diff
-WebViewer({
-  path: 'lib', // path to the PDFTron 'lib' folder on your server
-  initialDoc: 'https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf',
-+  fullAPI: true
-}, document.getElementById('viewer'))
-```
-
-You can refer to this [guide for more information](https://www.pdftron.com/documentation/web/guides/full-api)
 
 ## Contributing
 
@@ -51,4 +36,3 @@ See [contributing](./CONTRIBUTING.md).
 ## License
 
 See [license](./LICENSE).
-![](https://onepixel.pdftron.com/webviewer-angularjs-sample)
